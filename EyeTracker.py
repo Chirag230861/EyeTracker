@@ -31,7 +31,7 @@ while True:
         left_blink_distance = left_eye_top.y - left_eye_bottom.y
         right_blink_distance = right_eye_top.y - right_eye_bottom.y
         if left_blink_distance < BLINK_THRESHOLD and right_blink_distance < BLINK_THRESHOLD:
-            pyautogui.click(button='left')  # Perform a left-click
+            pyautogui.click(button='left') 
             print("Left-click triggered by both eyes blinking")
             pyautogui.sleep(1)  
     cv2.imshow('Eye Controlled Mouse', frame)
